@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Card from "./Card";
 
 function Foreground() {
+
+    const ref = useRef(null);
   
   const data = [
     {
@@ -26,11 +28,11 @@ function Foreground() {
   useState();
   return (
     <div
-      
+      ref={ref}
       className="fixed top-0 left-0 z-[3] w-full h-full flex gap-10 flexwrap-wrap p-5"
     >
       {data.map((item, index) => (
-        <Card data={item} />
+        <Card data={item} reference={ref}/>
       ))}
     </div>
   );
