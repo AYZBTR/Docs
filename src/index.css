@@ -5,3 +5,7 @@
 *{
   font-family: poppins;
 }
+
+::selection{
+  color: rgb(99, 60, 20);
+}
