@@ -48,3 +48,7 @@ The cards are interactive and showcase file details such as description, file si
    ```bash
    git clone <repository_url>
    cd <repository_folder>
+
+
+2. npm install
+3. npm run dev
